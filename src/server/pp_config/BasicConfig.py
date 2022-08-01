@@ -6,6 +6,7 @@ class BasicConfig(object):
     def __init__(self, filename='config.ini'):
         self.filename = filename
         self.data = configparser.ConfigParser()
+        self.save = self.initial_new_config
         if os.path.exists(self.filename):
             self.load_config()
         else:
