@@ -18,3 +18,6 @@ class BasicConfig(object):
     
     def load_config(self):
         self.data.read(self.filename)
+    
+    def custom_config_through_shell(self):
+        pass
